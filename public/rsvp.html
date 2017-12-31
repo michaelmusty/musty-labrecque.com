@@ -33,34 +33,55 @@
       destroy();
       var nodes = [];
       var edges = [];
-      // musty nodes
+      // musty NODES
         nodes.push({id: 'michael', label: 'Michael', group: 'friday', title: 'Michael Musty'});
         nodes.push({id: 'mary', label: 'Mary', group: 'friday', title: 'Mary Musty'});
         nodes.push({id: 'jim', label: 'Jim', group: 'friday', title: 'Jim Musty'});
         nodes.push({id: 'matt', label: 'Matt', group: 'friday', title: 'Matt Musty'});
-      // labrecque nodes
+      // labrecque NODES
         nodes.push({id: 'nicole', label: 'Nicole', group: 'friday', title: 'Nicole Labrecque'});
         nodes.push({id: 'cheryl', label: 'Cheryl', group: 'friday', title: 'Cheryl Labrecque'});
         nodes.push({id: 'andre', label: 'Andre', group: 'friday', title: 'Andre Labrecque'});
         nodes.push({id: 'julienne', label: 'Julienne', group: 'friday', title: 'Julienne Labrecque'});
         nodes.push({id: 'john', label: 'John', group: 'friday', title: 'John Paul Labrecque'});
-      // michael edges
-        edges.push({from: 'michael', to: 'nicole'});
-        edges.push({from: 'michael', to: 'mary'});
-        edges.push({from: 'michael', to: 'jim'});
-        edges.push({from: 'michael', to: 'matt'});
-        edges.push({from: 'michael', to: 'andre'});
-        edges.push({from: 'michael', to: 'cheryl'});
-        edges.push({from: 'michael', to: 'julienne'});
-        edges.push({from: 'michael', to: 'john'});
-      // nicole edges
-        edges.push({from: 'nicole', to: 'mary'});
-        edges.push({from: 'nicole', to: 'jim'});
-        edges.push({from: 'nicole', to: 'matt'});
-        edges.push({from: 'nicole', to: 'cheryl'});
-        edges.push({from: 'nicole', to: 'andre'});
-        edges.push({from: 'nicole', to: 'julienne'});
-        edges.push({from: 'nicole', to: 'john'});
+      // EDGES
+        // michael
+        // nicole
+          edges.push({from: 'nicole', to: 'michael'});
+        // mary
+          edges.push({from: 'mary', to: 'nicole'});
+          edges.push({from: 'mary', to: 'michael'});
+        // jim
+          edges.push({from: 'jim', to: 'mary'});
+          edges.push({from: 'jim', to: 'nicole'});
+          edges.push({from: 'jim', to: 'michael'});
+        // matt
+          edges.push({from: 'matt', to: 'jim'});
+          edges.push({from: 'matt', to: 'mary'});
+          edges.push({from: 'matt', to: 'nicole'});
+          edges.push({from: 'matt', to: 'michael'});
+        // andre
+          edges.push({from: 'andre', to: 'jim'});
+          edges.push({from: 'andre', to: 'mary'});
+          edges.push({from: 'andre', to: 'nicole'});
+          edges.push({from: 'andre', to: 'michael'});
+        // cheryl
+          edges.push({from: 'cheryl', to: 'andre'});
+          edges.push({from: 'cheryl', to: 'jim'});
+          edges.push({from: 'cheryl', to: 'mary'});
+          edges.push({from: 'cheryl', to: 'nicole'});
+          edges.push({from: 'cheryl', to: 'michael'});
+        // julienne
+          edges.push({from: 'julienne', to: 'cheryl'});
+          edges.push({from: 'julienne', to: 'andre'});
+          edges.push({from: 'julienne', to: 'nicole'});
+          edges.push({from: 'julienne', to: 'michael'});
+        // john
+          edges.push({from: 'john', to: 'julienne'});
+          edges.push({from: 'john', to: 'cheryl'});
+          edges.push({from: 'john', to: 'andre'});
+          edges.push({from: 'john', to: 'nicole'});
+          edges.push({from: 'john', to: 'michael'});
       // create a network
       var container = document.getElementById('mynetwork');
       var data = {
