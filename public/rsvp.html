@@ -33,8 +33,8 @@
       destroy();
       var nodes = [];
       var edges = [];
-      nodes.push({id: 1, label: 'm', group: 'size1', title: 'M'});
-      nodes.push({id: 2, label: 'l', group: 'sizeN', title: 'L'});
+      nodes.push({id: 1, label: 'MM', group: 'musty', title: 'Michael Musty'});
+      nodes.push({id: 2, label: 'NL', group: 'labrecque', title: 'Nicole Labrecque'});
       edges.push({from: 2, to: 1});
       // create a network
       var container = document.getElementById('mynetwork');
@@ -59,10 +59,10 @@
           arrows: {to : true }
         },
         groups: {
-          size1: {
+          musty: {
             color: {background: 'white', border: 'black'}
           },
-          sizeN: {
+          labrecque: {
             color: {background: 'yellow', border: 'black'}
           }
         },
