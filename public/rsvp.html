@@ -33,10 +33,16 @@
       destroy();
       var nodes = [];
       var edges = [];
-      nodes.push({id: 'mm', label: 'MM', group: 'musty', title: 'Michael Musty'});
-      nodes.push({id: 'nl', label: 'NL', group: 'labrecque', title: 'Nicole Labrecque'});
-      edges.push({from: 'mm', to: 'nl'});
-      edges.push({from: 'nl', to: 'mm'});
+      // musty nodes
+      nodes.push({id: 'michael', label: 'Michael', group: 'musty', title: 'Michael Musty'});
+      nodes.push({id: 'mary', label: 'Mary', group: 'musty', title: 'Mary Musty'});
+      nodes.push({id: 'jim', label: 'Jim', group: 'musty', title: 'Jim Musty'});
+      nodes.push({id: 'matt', label: 'Matt', group: 'musty', title: 'Matt Musty'});
+      // labrecque nodes
+      nodes.push({id: 'nicole', label: 'Nicole', group: 'labrecque', title: 'Nicole Labrecque'});
+      // edges
+      edges.push({from: 'michael', to: 'nicole'});
+      edges.push({from: 'nicole', to: 'michael'});
       // create a network
       var container = document.getElementById('mynetwork');
       var data = {
@@ -64,7 +70,7 @@
             color: {background: 'pink', border: 'black'}
           },
           labrecque: {
-            color: {background: 'maroon', border: 'black'}
+            color: {text: white, background: 'maroon', border: 'black'}
           }
         },
         interaction: {
