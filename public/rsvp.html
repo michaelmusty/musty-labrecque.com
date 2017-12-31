@@ -33,9 +33,9 @@
       destroy();
       var nodes = [];
       var edges = [];
-      nodes.push({id: 1, label: 'MM', group: 'musty', title: 'Michael Musty'});
-      nodes.push({id: 2, label: 'NL', group: 'labrecque', title: 'Nicole Labrecque'});
-      edges.push({from: 2, to: 1});
+      nodes.push({id: 'mm', label: 'MM', group: 'musty', title: 'Michael Musty'});
+      nodes.push({id: 'nl', label: 'NL', group: 'labrecque', title: 'Nicole Labrecque'});
+      edges.push({from: 'mm', to: 'nl'});
       // create a network
       var container = document.getElementById('mynetwork');
       var data = {
