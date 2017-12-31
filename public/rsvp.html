@@ -11,8 +11,8 @@
   <!-- visjs -->
   <style type="text/css">
     #mynetwork {
-      width: 40rem;
-      height: 40rem;
+      width: 50rem;
+      height: 50rem;
       border: 1px solid #444444;
       background-color: white;
     }
@@ -34,13 +34,16 @@
       var nodes = [];
       var edges = [];
       // musty nodes
-      nodes.push({id: 'michael', label: 'Michael', group: 'musty2night', title: 'Michael Musty'});
-      nodes.push({id: 'mary', label: 'Mary', group: 'musty2night', title: 'Mary Musty'});
-      nodes.push({id: 'jim', label: 'Jim', group: 'musty2night', title: 'Jim Musty'});
-      nodes.push({id: 'matt', label: 'Matt', group: 'musty2night', title: 'Matt Musty'});
+      nodes.push({id: 'michael', label: 'Michael', group: '2night', title: 'Michael Musty'});
+      nodes.push({id: 'mary', label: 'Mary', group: '2night', title: 'Mary Musty'});
+      nodes.push({id: 'jim', label: 'Jim', group: '2night', title: 'Jim Musty'});
+      nodes.push({id: 'matt', label: 'Matt', group: '2night', title: 'Matt Musty'});
       // labrecque nodes
-      nodes.push({id: 'nicole', label: 'Nicole', group: 'labrecque2night', title: 'Nicole Labrecque'});
-      nodes.push({id: 'cheryl', label: 'Cheryl', group: 'labrecque2night', title: 'Nicole Labrecque'});
+      nodes.push({id: 'nicole', label: 'Nicole', group: '2night', title: 'Nicole Labrecque'});
+      nodes.push({id: 'cheryl', label: 'Cheryl', group: '2night', title: 'Cheryl Labrecque'});
+      nodes.push({id: 'andre', label: 'Andre', group: '2night', title: 'Andre Labrecque'});
+      nodes.push({id: 'julienne', label: 'Julienne', group: '2night', title: 'Julienne Labrecque'});
+      nodes.push({id: 'John', label: 'John', group: '2night', title: 'John Paul Labrecque'});
       // edges undirected
       edges.push({from: 'michael', to: 'nicole'});
       edges.push({from: 'michael', to: 'mary'});
@@ -72,17 +75,11 @@
           smooth: true
         },
         groups: {
-          musty1night: {
-            color: {background: 'white', border: 'maroon'}
-          },
-          musty2night: {
+          1night: {
             color: {background: 'pink', border: 'maroon'}
           },
-          labrecque1night: {
-            color: {background: 'white', border: 'navy'}
-          },
-          labrecque2night: {
-            color: {background: 'pink', border: 'navy'}
+          2night: {
+            color: {background: 'white', border: 'maroon'}
           }
         },
         interaction: {
