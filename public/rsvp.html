@@ -34,25 +34,25 @@
       var nodes = [];
       var edges = [];
       // musty nodes
-      nodes.push({id: 'michael', label: 'Michael', group: '2night', title: 'Michael Musty'});
-      nodes.push({id: 'mary', label: 'Mary', group: '2night', title: 'Mary Musty'});
-      nodes.push({id: 'jim', label: 'Jim', group: '2night', title: 'Jim Musty'});
-      nodes.push({id: 'matt', label: 'Matt', group: '2night', title: 'Matt Musty'});
+        nodes.push({id: 'michael', label: 'Michael', group: 'friday', title: 'Michael Musty'});
+        nodes.push({id: 'mary', label: 'Mary', group: 'friday', title: 'Mary Musty'});
+        nodes.push({id: 'jim', label: 'Jim', group: 'friday', title: 'Jim Musty'});
+        nodes.push({id: 'matt', label: 'Matt', group: 'friday', title: 'Matt Musty'});
       // labrecque nodes
-      nodes.push({id: 'nicole', label: 'Nicole', group: '2night', title: 'Nicole Labrecque'});
-      nodes.push({id: 'cheryl', label: 'Cheryl', group: '2night', title: 'Cheryl Labrecque'});
-      nodes.push({id: 'andre', label: 'Andre', group: '2night', title: 'Andre Labrecque'});
-      nodes.push({id: 'julienne', label: 'Julienne', group: '2night', title: 'Julienne Labrecque'});
-      nodes.push({id: 'John', label: 'John', group: '2night', title: 'John Paul Labrecque'});
+        nodes.push({id: 'nicole', label: 'Nicole', group: 'friday', title: 'Nicole Labrecque'});
+        nodes.push({id: 'cheryl', label: 'Cheryl', group: 'friday', title: 'Cheryl Labrecque'});
+        nodes.push({id: 'andre', label: 'Andre', group: 'friday', title: 'Andre Labrecque'});
+        nodes.push({id: 'julienne', label: 'Julienne', group: 'friday', title: 'Julienne Labrecque'});
+        nodes.push({id: 'John', label: 'John', group: 'friday', title: 'John Paul Labrecque'});
       // edges undirected
-      edges.push({from: 'michael', to: 'nicole'});
-      edges.push({from: 'michael', to: 'mary'});
-      edges.push({from: 'michael', to: 'jim'});
-      edges.push({from: 'michael', to: 'matt'});
-      edges.push({from: 'nicole', to: 'mary'});
-      edges.push({from: 'nicole', to: 'jim'});
-      edges.push({from: 'nicole', to: 'matt'});
-      edges.push({from: 'nicole', to: 'cheryl'});
+        edges.push({from: 'michael', to: 'nicole'});
+        edges.push({from: 'michael', to: 'mary'});
+        edges.push({from: 'michael', to: 'jim'});
+        edges.push({from: 'michael', to: 'matt'});
+        edges.push({from: 'nicole', to: 'mary'});
+        edges.push({from: 'nicole', to: 'jim'});
+        edges.push({from: 'nicole', to: 'matt'});
+        edges.push({from: 'nicole', to: 'cheryl'});
       // create a network
       var container = document.getElementById('mynetwork');
       var data = {
@@ -75,10 +75,10 @@
           smooth: true
         },
         groups: {
-          1night: {
+          saturday: {
             color: {background: 'pink', border: 'maroon'}
           },
-          2night: {
+          friday: {
             color: {background: 'white', border: 'maroon'}
           }
         },
