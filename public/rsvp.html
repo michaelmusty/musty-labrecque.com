@@ -33,17 +33,17 @@
       destroy();
       var nodes = [];
       var edges = [];
-      // musty NODES
+      // NODES
         nodes.push({id: 'michael', label: 'Michael', group: 'friday', title: 'Michael Musty'});
         nodes.push({id: 'mary', label: 'Mary', group: 'friday', title: 'Mary Musty'});
         nodes.push({id: 'jim', label: 'Jim', group: 'friday', title: 'Jim Musty'});
         nodes.push({id: 'matt', label: 'Matt', group: 'friday', title: 'Matt Musty'});
-      // labrecque NODES
         nodes.push({id: 'nicole', label: 'Nicole', group: 'friday', title: 'Nicole Labrecque'});
         nodes.push({id: 'cheryl', label: 'Cheryl', group: 'friday', title: 'Cheryl Labrecque'});
         nodes.push({id: 'andre', label: 'Andre', group: 'friday', title: 'Andre Labrecque'});
         nodes.push({id: 'julienne', label: 'Julienne', group: 'friday', title: 'Julienne Labrecque'});
         nodes.push({id: 'john', label: 'John', group: 'friday', title: 'John Paul Labrecque'});
+        nodes.push({id: 'sam', label: 'Sam', group: 'friday', title: 'Samuel Sullivan Schiavone'});
       // EDGES
         // michael
         // nicole
@@ -82,6 +82,12 @@
           edges.push({from: 'john', to: 'andre'});
           edges.push({from: 'john', to: 'nicole'});
           edges.push({from: 'john', to: 'michael'});
+        // sam
+          edges.push({from: 'sam', to: 'matt'});
+          edges.push({from: 'sam', to: 'jim'});
+          edges.push({from: 'sam', to: 'mary'});
+          edges.push({from: 'sam', to: 'nicole'});
+          edges.push({from: 'sam', to: 'michael'});
       // create a network
       var container = document.getElementById('mynetwork');
       var data = {
