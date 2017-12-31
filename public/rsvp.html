@@ -11,8 +11,8 @@
   <!-- visjs -->
   <style type="text/css">
     #mynetwork {
-      width: 50rem;
-      height: 50rem;
+      width: 40rem;
+      height: 40rem;
       border: 1px solid #444444;
       background-color: white;
     }
@@ -44,15 +44,23 @@
         nodes.push({id: 'andre', label: 'Andre', group: 'friday', title: 'Andre Labrecque'});
         nodes.push({id: 'julienne', label: 'Julienne', group: 'friday', title: 'Julienne Labrecque'});
         nodes.push({id: 'John', label: 'John', group: 'friday', title: 'John Paul Labrecque'});
-      // edges undirected
+      // michael edges
         edges.push({from: 'michael', to: 'nicole'});
         edges.push({from: 'michael', to: 'mary'});
         edges.push({from: 'michael', to: 'jim'});
         edges.push({from: 'michael', to: 'matt'});
+        edges.push({from: 'michael', to: 'andre'});
+        edges.push({from: 'michael', to: 'cheryl'});
+        edges.push({from: 'michael', to: 'julienne'});
+        edges.push({from: 'michael', to: 'john'});
+      // nicole edges
         edges.push({from: 'nicole', to: 'mary'});
         edges.push({from: 'nicole', to: 'jim'});
         edges.push({from: 'nicole', to: 'matt'});
         edges.push({from: 'nicole', to: 'cheryl'});
+        edges.push({from: 'nicole', to: 'andre'});
+        edges.push({from: 'nicole', to: 'julienne'});
+        edges.push({from: 'nicole', to: 'john'});
       // create a network
       var container = document.getElementById('mynetwork');
       var data = {
