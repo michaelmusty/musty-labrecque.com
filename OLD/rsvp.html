@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MustyLabrecque | rsvp</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/paper.min.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <!-- visjs -->
+  <style type="text/css">
+    #mynetwork {
+      width: 40rem;
+      height: 20rem;
+      border: 1px solid #444444;
+      background-color: white;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+    var network = null;
+    var layoutMethod = "directed";
+    var len = undefined;
+    function destroy() {
+      if (network !== null) {
+        network.destroy();
+        network = null;
+      }
+    }
+    function draw() {
+      destroy();
+      var nodes = [];
+      var edges = [];
+      // NODES
+        nodes.push({id: 'michael', label: 'Michael', group: 'friday', title: 'Michael Musty'});
+        nodes.push({id: 'mary', label: 'Mary', group: 'friday', title: 'Mary Musty'});
+        nodes.push({id: 'jim', label: 'Jim', group: 'friday', title: 'Jim Musty'});
+        nodes.push({id: 'matt', label: 'Matt', group: 'friday', title: 'Matt Musty'});
+        nodes.push({id: 'nicole', label: 'Nicole', group: 'friday', title: 'Nicole Labrecque'});
+        nodes.push({id: 'cheryl', label: 'Cheryl', group: 'friday', title: 'Cheryl Labrecque'});
+        nodes.push({id: 'andre', label: 'Andre', group: 'friday', title: 'Andre Labrecque'});
+        nodes.push({id: 'julienne', label: 'Julienne', group: 'friday', title: 'Julienne Labrecque'});
+        nodes.push({id: 'john', label: 'John', group: 'friday', title: 'John Paul Labrecque'});
+        nodes.push({id: 'sam', label: 'Sam', group: 'friday', title: 'Samuel Sullivan Schiavone'});
+      // EDGES
+        // michael
+        // nicole
+          edges.push({from: 'nicole', to: 'michael'});
+        // mary
+          edges.push({from: 'mary', to: 'nicole'});
+          edges.push({from: 'mary', to: 'michael'});
+        // jim
+          edges.push({from: 'jim', to: 'mary'});
+          edges.push({from: 'jim', to: 'nicole'});
+          edges.push({from: 'jim', to: 'michael'});
+        // matt
+          edges.push({from: 'matt', to: 'jim'});
+          edges.push({from: 'matt', to: 'mary'});
+          edges.push({from: 'matt', to: 'nicole'});
+          edges.push({from: 'matt', to: 'michael'});
+        // andre
+          edges.push({from: 'andre', to: 'jim'});
+          edges.push({from: 'andre', to: 'mary'});
+          edges.push({from: 'andre', to: 'nicole'});
+          edges.push({from: 'andre', to: 'michael'});
+        // cheryl
+          edges.push({from: 'cheryl', to: 'andre'});
+          edges.push({from: 'cheryl', to: 'jim'});
+          edges.push({from: 'cheryl', to: 'mary'});
+          edges.push({from: 'cheryl', to: 'nicole'});
+          edges.push({from: 'cheryl', to: 'michael'});
+        // julienne
+          edges.push({from: 'julienne', to: 'cheryl'});
+          edges.push({from: 'julienne', to: 'andre'});
+          edges.push({from: 'julienne', to: 'nicole'});
+          edges.push({from: 'julienne', to: 'michael'});
+        // john
+          edges.push({from: 'john', to: 'julienne'});
+          edges.push({from: 'john', to: 'cheryl'});
+          edges.push({from: 'john', to: 'andre'});
+          edges.push({from: 'john', to: 'nicole'});
+          edges.push({from: 'john', to: 'michael'});
+        // sam
+          edges.push({from: 'sam', to: 'matt'});
+          edges.push({from: 'sam', to: 'jim'});
+          edges.push({from: 'sam', to: 'mary'});
+          edges.push({from: 'sam', to: 'nicole'});
+          edges.push({from: 'sam', to: 'michael'});
+      // create a network
+      var container = document.getElementById('mynetwork');
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+      var options = {
+        nodes: {
+          shape: 'box',
+          size: 15,
+          font: {
+            size: 15,
+          },
+          borderWidth: 1,
+          shadow: true
+        },
+        edges: {
+          width: 2,
+          shadow: true,
+          smooth: true
+        },
+        groups: {
+          saturday: {
+            color: {background: 'white', border: 'maroon'}
+          },
+          friday: {
+            color: {background: 'silver', border: 'maroon'}
+          }
+        },
+        interaction: {
+          hover: true
+        },
+        layout: {
+          randomSeed: 15
+        }
+      };
+      network = new vis.Network(container, data, options);
+    }
+  </script>
+</head>
+<body onload="draw();">
+  <div class="container paper">
+    <div class="row flex-center">
+      <a href="index.html" class="paper-btn margin btn-primary">home</a>
+      <a href="itinerary.html" class="paper-btn margin btn-secondary">itinerary</a>
+      <a href="location.html" class="paper-btn margin btn-success">location</a>
+      <a href="rsvp.html" class="paper-btn margin btn-warning btn-large">rsvp</a>
+      <a href="misc.html" class="paper-btn margin btn-danger">misc</a>
+    </div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et neque orci. Cras finibus sit amet est at ultricies. Vestibulum lacinia finibus ante non commodo. Nam eu nisl ipsum. Vestibulum fringilla sodales nibh et hendrerit. Fusce odio dolor, dapibus at neque id, fringilla maximus erat. Nullam et lobortis justo. Duis id pharetra urna. Maecenas et dolor lorem.
+    <div class="container">
+      <div class="row flex-center">
+        <div id="mynetwork"></div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <img src="/photos/rsvp/rsvp_big.jpg" alt="Random Unsplash">
+    </div>
+    <br>
+    <div class="container">
+      <img src="/photos/rsvp/rsvp_pano.jpg" alt="Random Unsplash">
+    </div>
+    <div class="row flex-center">
+      <a href="https://github.com/papercss" class="paper-btn margin">Made with PaperCSS</a>
+    </div>
+  </div>
+</body>
+</html>
