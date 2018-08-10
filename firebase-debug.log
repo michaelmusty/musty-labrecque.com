@@ -1,0 +1,39 @@
+[debug] [2018-08-04T13:25:58.210Z] ----------------------------------------------------------------------
+[debug] [2018-08-04T13:25:58.213Z] Command:       /Users/mjmusty/.nvm/versions/node/v9.9.0/bin/node /Users/mjmusty/.nvm/versions/node/v9.9.0/bin/firebase deploy
+[debug] [2018-08-04T13:25:58.213Z] CLI Version:   4.0.0
+[debug] [2018-08-04T13:25:58.213Z] Platform:      darwin
+[debug] [2018-08-04T13:25:58.213Z] Node Version:  v9.9.0
+[debug] [2018-08-04T13:25:58.214Z] Time:          Sat Aug 04 2018 09:25:58 GMT-0400 (EDT)
+[debug] [2018-08-04T13:25:58.214Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-04T13:25:58.350Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-04T13:25:58.350Z] > authorizing via signed-in user
+[debug] [2018-08-04T13:25:58.352Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-04T13:25:58.353Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/Dqf0owON0_mmbS_JvZIQPU6m0qK6-jGSvgBWMqLAUb4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Aug 04 2018 09:25:58 GMT-0400 (EDT)
+[debug] [2018-08-04T13:25:58.769Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-04T13:25:59.050Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/musty-labrecque  
+  
+ Sat Aug 04 2018 09:25:59 GMT-0400 (EDT)
+[debug] [2018-08-04T13:25:59.541Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-04T13:25:59.542Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/musty-labrecque/tokens  
+  
+ Sat Aug 04 2018 09:25:59 GMT-0400 (EDT)
+[debug] [2018-08-04T13:26:01.461Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'musty-labrecque'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-08-04T13:26:08.163Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/musty-labrecque/uploads/-LJ46RSPZHclPyD9jeWR?fileCount=27&message=  
+  
+ Sat Aug 04 2018 09:26:08 GMT-0400 (EDT)
+[debug] [2018-08-04T13:32:52.575Z] Error: write EPIPE
+    at WriteWrap.afterWrite [as oncomplete] (net.js:844:14)
+[error] 
+[error] Error: Server Error. write EPIPE
