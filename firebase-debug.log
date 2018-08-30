@@ -81,3 +81,15 @@
 [debug] [2018-08-30T15:13:51.968Z] <<< HTTP RESPONSE 200
 [debug] [2018-08-30T15:13:51.986Z] [hosting][populate queue][FINAL]
 [debug] [2018-08-30T15:13:51.986Z] [hosting] uploads queued: 27
+[debug] [2018-08-30T15:21:10.054Z] ----------------------------------------------------------------------
+[debug] [2018-08-30T15:21:10.057Z] Command:       /Users/mjmusty/.nvm/versions/node/v9.9.0/bin/node /Users/mjmusty/.nvm/versions/node/v9.9.0/bin/firebase deploy
+[debug] [2018-08-30T15:21:10.057Z] CLI Version:   4.2.1
+[debug] [2018-08-30T15:21:10.057Z] Platform:      darwin
+[debug] [2018-08-30T15:21:10.057Z] Node Version:  v9.9.0
+[debug] [2018-08-30T15:21:10.058Z] Time:          Thu Aug 30 2018 11:21:10 GMT-0400 (EDT)
+[debug] [2018-08-30T15:21:10.058Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-30T15:21:10.068Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-30T15:21:10.069Z] > authorizing via signed-in user
+[debug] [2018-08-30T15:21:10.071Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/musty-labrecque  
+ 
