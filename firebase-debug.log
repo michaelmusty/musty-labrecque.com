@@ -1,0 +1,83 @@
+[debug] [2018-08-30T15:05:45.276Z] ----------------------------------------------------------------------
+[debug] [2018-08-30T15:05:45.292Z] Command:       /Users/mjmusty/.nvm/versions/node/v9.9.0/bin/node /Users/mjmusty/.nvm/versions/node/v9.9.0/bin/firebase deploy
+[debug] [2018-08-30T15:05:45.293Z] CLI Version:   4.0.0
+[debug] [2018-08-30T15:05:45.293Z] Platform:      darwin
+[debug] [2018-08-30T15:05:45.293Z] Node Version:  v9.9.0
+[debug] [2018-08-30T15:05:45.300Z] Time:          Thu Aug 30 2018 11:05:45 GMT-0400 (EDT)
+[debug] [2018-08-30T15:05:45.300Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-30T15:05:45.372Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-30T15:05:45.373Z] > authorizing via signed-in user
+[debug] [2018-08-30T15:05:45.375Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-30T15:05:45.375Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/Dqf0owON0_mmbS_JvZIQPU6m0qK6-jGSvgBWMqLAUb4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Aug 30 2018 11:05:45 GMT-0400 (EDT)
+[info] 
+[warn] ⚠  Your CLI authentication needs to be updated to take advantage of new features.
+[warn] ⚠  Please run firebase login --reauth
+[info] 
+[debug] [2018-08-30T15:06:01.891Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-08-30T15:06:01.891Z] > authorizing via signed-in user
+[debug] [2018-08-30T15:06:01.892Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-30T15:06:01.892Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/Dqf0owON0_mmbS_JvZIQPU6m0qK6-jGSvgBWMqLAUb4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Aug 30 2018 11:06:01 GMT-0400 (EDT)
+[debug] [2018-08-30T15:06:05.547Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-30T15:06:05.645Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/musty-labrecque  
+  
+ Thu Aug 30 2018 11:06:05 GMT-0400 (EDT)
+[debug] [2018-08-30T15:06:12.192Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-30T15:06:12.194Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/musty-labrecque/tokens  
+  
+ Thu Aug 30 2018 11:06:12 GMT-0400 (EDT)
+[debug] [2018-08-30T15:06:15.280Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'musty-labrecque'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-08-30T15:06:29.468Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/musty-labrecque/uploads/-LLAMjTFyH9-HCqOD3qc?fileCount=27&message=  
+  
+ Thu Aug 30 2018 11:06:29 GMT-0400 (EDT)
+[debug] [2018-08-30T15:13:42.532Z] ----------------------------------------------------------------------
+[debug] [2018-08-30T15:13:42.536Z] Command:       /Users/mjmusty/.nvm/versions/node/v9.9.0/bin/node /Users/mjmusty/.nvm/versions/node/v9.9.0/bin/firebase deploy
+[debug] [2018-08-30T15:13:42.537Z] CLI Version:   4.2.1
+[debug] [2018-08-30T15:13:42.537Z] Platform:      darwin
+[debug] [2018-08-30T15:13:42.537Z] Node Version:  v9.9.0
+[debug] [2018-08-30T15:13:42.538Z] Time:          Thu Aug 30 2018 11:13:42 GMT-0400 (EDT)
+[debug] [2018-08-30T15:13:42.538Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-30T15:13:42.585Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-30T15:13:42.585Z] > authorizing via signed-in user
+[debug] [2018-08-30T15:13:42.587Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-30T15:13:42.588Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-08-30T15:13:43.315Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-30T15:13:43.448Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/musty-labrecque  
+ 
+[debug] [2018-08-30T15:13:43.937Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'musty-labrecque'...
+[info] 
+[info] i  deploying hosting
+[debug] [2018-08-30T15:13:43.943Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/musty-labrecque/versions  
+
+[debug] [2018-08-30T15:13:46.588Z] <<< HTTP RESPONSE 200
+[info] i  hosting[musty-labrecque]: beginning deploy...
+[info] i  hosting[musty-labrecque]: found 27 files in public
+[debug] [2018-08-30T15:13:46.604Z] [hosting] hash cache [cHVibGlj] not populated
+[debug] [2018-08-30T15:13:49.314Z] [hosting] hash cache [cHVibGlj] stored for 27 files
+[debug] [2018-08-30T15:13:49.315Z] [hosting][hash queue][FINAL]
+[debug] [2018-08-30T15:13:49.315Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/musty-labrecque/versions/2058a316fc8031ed:populateFiles  
+ <request body omitted>
+[debug] [2018-08-30T15:13:51.968Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-30T15:13:51.986Z] [hosting][populate queue][FINAL]
+[debug] [2018-08-30T15:13:51.986Z] [hosting] uploads queued: 27
